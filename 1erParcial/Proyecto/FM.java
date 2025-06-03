@@ -1,20 +1,24 @@
 import javax.swing.JOptionPane;
-public class Prueba1
+public class FM
 {
-    public static void main(String args[])
+    //METODO: Que muestra letra x letra en la cadena recibida por parametro
+    public static void mostrarLetraXLetra(String c)
     {
-        String cadena=pedirCadena("Ingrese una Cadena");
-        /*char pl=primLetra(cadena);
-        char ul=ultLetra(cadena);
-        String inv=invertir(cadena);
-        int cv=contarVocales(cadena);*/
-        String salida="La cadena es: "+cadena/*+
-        "\nPrimera Letra es: "+pl+
-        "\nUltima Letra es: "+ul+
-        "\nLa cadena invertida es: "+inv+
-        "\nHay "+cv+" vocales"*/;
-        mostrarMensaje(salida);
+        int i=0;
+        while(i<c.length())
+        {
+            char l=c.charAt(i);
+            //if(l=='A'||l=='E')
+            mostrarMensaje(l+"");
+            i++;
+        }
     }
+    //FUNCION: Retorna el tamanio de la cadena recibida por parametro
+    public static int tamanio(String c)
+    {
+        return c.length();
+    }
+    //FUNCION: Que valida y pide una cadena
     public static String pedirCadena(String msg)
     {
         String cadena="";
@@ -32,6 +36,7 @@ public class Prueba1
         }while(seguir);
         return cadena;
     }
+    //METOODO: Que muestra un mensaje enviado por parametro.
     public static void mostrarMensaje(String msg)
     {
         JOptionPane.showMessageDialog(null,msg);

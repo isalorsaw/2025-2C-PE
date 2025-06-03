@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=FM
+comment1.params=c
+comment1.target=void\ mostrarLetraXLetra(java.lang.String)
+comment2.params=c
+comment2.target=int\ tamanio(java.lang.String)
+comment3.params=msg
+comment3.target=java.lang.String\ pedirCadena(java.lang.String)
+comment4.params=msg
+comment4.target=void\ mostrarMensaje(java.lang.String)
+numComments=5
